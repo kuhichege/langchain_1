@@ -17,7 +17,7 @@ def build_turns() -> list[str]:
     return [
         "I'm planning a two-week trip to Japan in April, starting in Tokyo.",
         "My total budget is $4,000 including flights.",
-        "What is 2 + 2?",
+        "What is 2 + 5?",
         "I want to see cherry blossoms and visit at least one hot spring town.",
         "What is the capital of Italy?",
         "For the middle week I'm thinking Kyoto and Osaka by train.",
