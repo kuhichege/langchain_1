@@ -44,8 +44,19 @@ from langchain.chat_models import init_chat_model
 
 # ═══ Alternative Models (comment out default above, uncomment one below) ═════
 # model = init_chat_model("anthropic:claude-sonnet-5-5")
-model = init_chat_model("openai:gpt-6-luna", use_responses_api=True, timeout=60, max_retries=2)
-strong_model = init_chat_model("openai:gpt-6.1-sol")
+model = init_chat_model("openai:gpt-6-luna", reasoning_effort="none", timeout=60, max_retries=2)
+# model = init_chat_model(
+#     "openai:gpt-6-luna", 
+#     use_responses_api=True, 
+#     timeout=60, 
+#     max_retries=2
+#     )
+strong_model = init_chat_model(
+    "openai:gpt-6.1-sol", 
+    use_responses_api=True, 
+    timeout=60, 
+    max_retries=2
+    )
 
 # ═══ Open-Source / Alternative Hosted Models ══════════════════════════════════
 
